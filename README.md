@@ -15,7 +15,7 @@ sub _nand {
 
 Files need a bit of a cleanup, documentation is sorely missing right now, come back later.
 
-Run alu-t.pl to perform all ALU tests. The .cmp files are from nand2tetris.
+Run ```alu-t.pl``` to perform all ALU tests. The .cmp files are from nand2tetris.
 
 
 
