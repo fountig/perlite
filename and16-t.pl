@@ -1,0 +1,32 @@
+#!/usr/bin/perl
+#
+
+require './gates.pl';
+require './multi-way.pl';
+
+open (FH, "<", "And16.cmp") || die "Could not open .cmp file\n";
+
+@TEST_LINES = <FH>;
+
+for $test_line (@TEST_LINES) {
+
+	next if $test_line =~/out/;
+
+	$_      = $test_line; # we dont need the first line 
+	s/ //g;
+
+	@testbits = split(/\|/, $_);
+
+	@a_test   = split(//, $testbits[1]);
+	@b_test   = split(//, $testbits[2]);
+	@out_test = split(//, $testbits[3]);
+
+	print "Running test for _and16 ... \n";
+	print "a: @a_test\n";
+	print "b: @b_test\n";
+	print "out: Should be @out_test ... ";
+
+	@and16_out = _and16(\@a_test, \@b_test);
+	if (@and16_out ~~ @out_test) {print " passed! \n";}
+	else {print " failed, got @and16_out instead.\n";}
+}
