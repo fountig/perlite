@@ -1,5 +1,5 @@
 # biscuitjoiner
-From this:
+Ex uno plures:
 
 ```
 sub _nand {
