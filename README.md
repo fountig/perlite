@@ -13,4 +13,6 @@ sub _nand {
 
 ```
 
+Files need a bit of a cleanup, documentation is sorely missing, come back later.
+
 
