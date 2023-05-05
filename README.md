@@ -1,5 +1,5 @@
 # biscuitjoiner
-Nisan &amp; Shocken's 16-bit Hack ALU chipset written in Perl5 arrays using only calls to _nand()
+From this:
 
 ```
 sub _nand {
