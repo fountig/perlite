@@ -10,6 +10,7 @@ sub _nand {
 	else 			{return 1;}
 
 }
+
 ```
 
 
